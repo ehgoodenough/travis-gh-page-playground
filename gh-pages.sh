@@ -1,4 +1,4 @@
-if [$TRAVIS_PULL_REQUEST != false]
+if [$TRAVIS_PULL_REQUEST != "false"]
 then
     openssl aes-256-cbc -K $encrypted_924df9a25462_key -iv $encrypted_924df9a25462_iv -in deploy_key.enc -out deploy_key -d # this was gen'd from travis encrypt-files on a deploy-key, which itself was gen'd from ssh-keygen, and copied into the deploy_keys section of github settings for this repo.
     chmod 600 deploy_key
