@@ -10,4 +10,7 @@ script:
  #- npm build
 
 after_script:
- - if $TRAVIS_BRANCH == "master"; then; echo "yo"; fi
+ - if $TRAVIS_BRANCH == "master"
+   then
+      echo "yo"
+   fi
