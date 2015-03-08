@@ -19,6 +19,6 @@ install:
 script:
  - "gulp build"
 
-after-script:
- - cd build
- - ls
+after_script:
+ - "cd build"
+ - "ls"
