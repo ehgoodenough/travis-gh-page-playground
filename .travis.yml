@@ -9,5 +9,5 @@ install:
 script:
  #- npm build
 
-after-script:
+after_script:
  - if $TRAVIS_BRANCH == "master"; echo "yo"; fi
