@@ -3,11 +3,11 @@ node_js:
  - "0.10"
 
 install:
- #- npm install
- #- npm install gulp --global
+ - npm install
+ - npm install gulp --global
 
 script:
- #- npm build
+ - npm build
 
 after_script:
  - chmod +x ./gh-pages.sh
