@@ -22,10 +22,10 @@ after_script:
  - "cd build"
  - "ls"
  - if $TRAVIS_BRANCH
- 	then
- 		echo $TRAVIS_BRANCH
-	fi
+   then
+      echo $TRAVIS_BRANCH
+   fi
  - if $TRAVIS_PULL_REQUEST
- 	then
- 		echo $TRAVIS_PULL_REQUEST
-	fi
+   then
+      echo $TRAVIS_PULL_REQUEST
+   fi
