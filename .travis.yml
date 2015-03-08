@@ -19,10 +19,10 @@ script:
  #- gulp build
 
 after_script:
- - openssl aes-256-cbc -K $encrypted_924df9a25462_key -iv $encrypted_924df9a25462_iv -in id_rsa.enc -out id_rsa -d
- - cat id_rsa
- - chmod 600 id_rsa
- - ssh-add id_rsa
+ - openssl aes-256-cbc -K $encrypted_924df9a25462_key -iv $encrypted_924df9a25462_iv -in deploy_key.enc -out deploy_key -d
+ - cat deploy_key
+ - chmod 600 deploy_key
+ - ssh-add deploy_key
  - mkdir gh-pages
  - cd gh-pages
  - git init

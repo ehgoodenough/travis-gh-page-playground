@@ -1,10 +1,12 @@
 node_modules
 bower_components
 
+deploy_key
+deploy_key.pub
+
 ._*
 *.log
 .DS_Store
-id_rsa
 
 build
 nw-apps
