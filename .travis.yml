@@ -8,4 +8,6 @@ install:
 
 script:
  #- npm build
- - deploy
+
+ after_script:
+ - if $TRAVIS_BRANCH == "master"; echo "yo"; fi
