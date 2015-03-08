@@ -3,9 +3,9 @@ node_js:
  - "0.10"
 
 install:
- - npm install
- - npm install gulp --global
+ #- npm install
+ #- npm install gulp --global
 
 script:
- - gulp build
- - node deploy
+ #- npm build
+ - deploy
