@@ -12,11 +12,11 @@ node_js:
  - "0.10"
 
 install:
-# - "npm install"
-# - "npm install gulp --global"
+ - "npm install"
+ - "npm install gulp --global"
 
 script:
-# - "gulp build"
+ - "gulp build"
 
 after_script:
  - mkdir gh-pages
@@ -25,4 +25,9 @@ after_script:
  - git remote add origin http://github.com/$TRAVIS_REPO_SLUG.git
  - git checkout --orphan gh-pages
  - git pull origin gh-pages
- - ls
+ - mkdir $TRAVIS_BRANCH
+ - cd $TRAVIS_BRANCH
+ - rm -rf *
+ - cp ../../build/**/* .
+ - cd ..
+ - git status
