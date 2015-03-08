@@ -16,6 +16,7 @@ after_script:
  - eval `ssh-agent -s`
  - mv deploy_key id_rsa
  - ssh-add id_rsa
+ - ssh -T git@github.com
  - mkdir gh-pages
  - cd gh-pages
  - git init
