@@ -29,6 +29,6 @@ after_script:
  - mkdir $TRAVIS_BRANCH
  - cd $TRAVIS_BRANCH
  - rm -rf *
- - cp ../../../build/**/* .
+ - cp ../../build/* .
  - cd ..
  - git status
