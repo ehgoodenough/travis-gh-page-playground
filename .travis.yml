@@ -20,6 +20,7 @@ script:
 
 after_script:
  - mkdir gh-pages
+ - ls
  - cd gh-pages
  - git init
  - git remote add origin http://github.com/$TRAVIS_REPO_SLUG.git
@@ -28,6 +29,6 @@ after_script:
  - mkdir $TRAVIS_BRANCH
  - cd $TRAVIS_BRANCH
  - rm -rf *
- - cp ../../build/**/* .
+ - cp ../../../build/**/* .
  - cd ..
  - git status
