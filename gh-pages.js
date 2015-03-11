@@ -2,6 +2,9 @@ var exec = require("child_process").exec
 
 if(process.env.TRAVIS_PULL_REQUEST != "false") {
     exec("./gh-pages-pull-request.sh", function(jserr, stdout, stderr) {
+        if(jserr || stderr) {
+            console.log(jserr, stderr)
+        }
         console.log(stdout)
         console.log("DONE")
     })
