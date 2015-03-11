@@ -5,7 +5,7 @@ ssh-add deploy_key
 
 git config --global user.name "Mocs Arcade"
 git config --global user.email "mocsarcade@gmail.com"
-git clone ssh://git@github.com/$TRAVIS_REPO_SLUG.git -b gh-pages gh-pages
+git clone ssh://git@github.com/ehgoodenough/travis-gh-pages.git -b gh-pages gh-pages
 
 cd gh-pages
 mkdir tree
