@@ -13,7 +13,7 @@ git pull origin gh-pages
 mkdir $TRAVIS_BRANCH
 cd $TRAVIS_BRANCH
 rm -rf *
-#cp ../../build/* .
+#cp ../../build/* . -r
 echo "Hello World" > "helloworld.txt"
 cd ..
 
