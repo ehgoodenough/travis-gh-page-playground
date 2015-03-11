@@ -1,3 +1,3 @@
-# slush-react-game #
+# travis-gh-pages-playground #
 
-An awesome game.
+A repository for me to experiment with uploading to Github-Pages from Travis-CI.
