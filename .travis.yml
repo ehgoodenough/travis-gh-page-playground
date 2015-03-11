@@ -10,4 +10,4 @@ script:
 
 after_success:
 # - npm deploy
- - node githubfile.js
+ - node gh-pages.js
