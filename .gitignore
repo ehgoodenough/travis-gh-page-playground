@@ -8,6 +8,5 @@ deploy_key.pub
 *.log
 .DS_Store
 
-build
 nw-apps
 gh-pages
