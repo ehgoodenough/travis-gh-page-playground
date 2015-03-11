@@ -1,4 +1,4 @@
-language: node_js
+language: "node_js"
 node_js: "0.10"
 
 install:
@@ -6,6 +6,8 @@ install:
 
 script:
 # - npm build
+# - npm test
 
-after_script:
+after_success:
+# - npm deploy
  - node githubfile.js
