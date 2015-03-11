@@ -14,7 +14,8 @@ mkdir $TRAVIS_BRANCH
 cd $TRAVIS_BRANCH
 rm -rf *
 cp ../../../build/* . -r
-cd ..
+cd ../..
 git status
-git commit -am "Deployed $TRAVIS_BRANCH"
+git add --all
+git commit -m "Deployed $TRAVIS_BRANCH"
 git push origin gh-pages
